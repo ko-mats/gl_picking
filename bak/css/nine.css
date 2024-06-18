@@ -1,0 +1,207 @@
+/* ====== スマホ ====== */
+@media only screen and (max-width: 1500px) {
+
+    .head_01 > div:nth-child(1) {
+            width: 50%;
+            background: transparent;
+            text-align: center;
+            color: #5CBCE0;
+            padding: 0.5em 0 0.5em 0;
+            height: 2.82em;
+            border: 3px solid #5CBCE0;
+            font-size: 1em;
+        }
+
+    .head_01 > div:nth-child(2) {
+        width: 48%;
+        text-align: center;
+        background: #5CBCE0;
+        padding: 0.5em 0 0.5em 0;
+        height: 3.2em;
+        color: #fff;
+    }
+
+    /*========== ヘッダー　02 =========*/
+    .head_box_02 {
+        background-color: #D4D7D7;
+        padding: 0.4em 0;
+        margin: 0 0 1em 0;
+    }
+
+    /*========== ヘッダー　02 END =========*/
+
+    .fa-thumbtack:before {
+        content: "\f08d";
+        color: #4b4b4b;
+    }
+
+    .page_title {
+        display: inline-block;
+    }
+
+    .home_sub_icon_span {
+        display: inline-block;
+        position: relative;
+        left: 3%;
+    }
+
+    .bikotokki_box_v {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .selected_bikotokki_v {
+        background-color: #007bff !important;
+        /* 選択されたボタンの背景色 */
+        color: #fff;
+        /* 選択されたボタンのテキスト色 */
+    }
+
+    .bikotokki_box_v button {
+        width: 100%;
+        padding: 0.5em 0 0.5em 0;
+        font-size: 16px;
+        border: none;
+        background-color: #6d6666;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .bikotokki_box_v button:hover {
+        background-color: #5a4b4b;
+    }
+
+    .dropdown_v {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-contents_v {
+        display: none;
+        position: absolute;
+        background-color: #c47e7e;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+        /* width: 100%; */
+    }
+
+    .dropdown-contents_v button {
+        /* color: black; */
+        width: 100%;
+        padding: 8px 0;
+        text-align: left;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .dropdown-contents_v button:hover {
+        background-color: #ddd;
+    }
+
+    /* ボタンのスタイル */
+    .dropbtn_v {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropbtn_v:hover,
+    .dropbtn_v:focus {
+        background-color: #3e8e41;
+    }
+
+    /* スキャンした JAN */
+    .cp_iptxt_02 {
+        position: relative;
+        width: 80%;
+        margin: 20px 3%;
+    }
+
+    .cp_iptxt_02 input[type='number'] {
+        font: 15px/24px sans-serif;
+        box-sizing: border-box;
+        width: 50%;
+        padding: 0.3em;
+        transition: 0.3s;
+        letter-spacing: 1px;
+        color: #aaaaaa;
+        border: none;
+        border-bottom: 1px solid #dedede;
+        background: transparent;
+    }
+
+    .ef_02 input[type='number']:focus {
+        border-bottom: 2px solid #da3c41;
+        outline: none;
+    }
+
+/* === スキャンした JAN === END */
+
+
+    /* 選択した値を表示する部分のスタイル */
+    .selected-value {
+        margin-top: 20px;
+    }
+
+
+    table {
+        border-collapse: collapse;
+        width: 100%; 
+        border-color: #4b4b4b;
+        border: 1px solid;
+    }
+
+    tr {
+        border: 1px solid;
+    }
+
+    td {
+        padding: 8px;
+        text-align: left;
+    }
+
+    .highlight {
+        background-color: yellow;
+        color: black;
+        font-weight: bold;
+    }
+
+    /* 一覧画面 */
+        .syoukai_01_item {
+
+        }
+
+    /* 倉庫　画像 */
+    .souko_icon_box img {
+        width: 6%;
+        height: auto;
+    }
+
+    /* 運送便 画像 */
+    .unsou_icon_box img {
+            width: 8%;
+            height: auto;
+    }  
+
+
+    /* 備考 */
+    .nine_bikou_01 {
+            font-size: 12px;
+            padding: 0 0 0 25px;
+    }
+
+    /* 特記 */
+    .nine_tokki_01 {
+            font-size: 12px;
+            padding: 0 0 0 15px;
+    }
+
+}

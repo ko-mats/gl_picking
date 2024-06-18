@@ -1,0 +1,406 @@
+@media only screen and (max-width: 1500px) {
+
+    .content_detail {
+            width: 85%;
+            border: 2px solid #5CBCE0;
+            margin: 2em 0;
+            padding: 0.5em 1em;
+            position: relative;
+            top: 0;
+            left: 2.5%;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.18);
+    }
+
+    /* ロケ、　在庫数 */
+    .detail_item_01_box {
+        display: flex;
+        width: 100%;
+    }
+
+    .detail_item_01_box > p:nth-of-type(1) {
+        width: 48%;
+    }
+
+    .detail_item_01_box > p:nth-of-type(2) {
+             width: 48%;
+    }
+
+    /* 数量、ケース、バラ */
+    .detail_item_05_box {
+        display: flex;
+        width: 100%;
+        color: red;
+    }
+
+    .detail_item_05_box > p:nth-of-type(1) {
+        width: 33%;
+    }
+
+    .detail_item_05_box>p:nth-of-type(2) {
+        width: 33%;
+    }
+
+    .detail_item_05_box>p:nth-of-type(3) {
+        width: 33%;
+    }
+
+    .detail_midashi {
+        display: inline-block;
+        font-weight: bold;
+    }
+
+    .di_tmp {
+        margin-left: 4.5em;
+    }
+
+    /* 得意先 */
+    .detail_item_10 {
+        position: relative;
+        left: 0;
+    }
+
+    body>div.container_detail>div>p.detail_item_10>span:nth-child(4) {
+        position: absolute;
+        left: 18%;
+    }
+
+    /* 確定ボタン */
+    #kakutei_btn {
+        color: #fff;text-decoration: none;
+        font-size: 16px;background: #4b4b4b;
+        padding: 0.6em 1.2em;border-radius: 4px;box-shadow: none;
+        border: none;
+    }
+
+    /* 戻るボタン */
+         #five_back_button {
+             color: #fff;
+             text-decoration: none;
+             font-size: 16px;
+             background: #4b4b4b;
+             padding: 0.6em 1.2em;
+             border-radius: 4px;
+             box-shadow: none;
+             border: none;
+         }
+
+        /* モーダルのスタイル 「確定」 */
+        .modal {
+            display: none;
+            /* 最初は非表示 */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0);
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+    
+        .modal-content {
+                background-color: #fefefe;
+                    margin: 17% auto;
+                    padding: 20px;
+                    border: 1px solid #888;
+                    width: 80%;
+                    border-top: 30px solid #333;
+        }
+    
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+    
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .modal_div {
+            display: flex;
+        }
+
+        .modal_div > div:nth-last-of-type(1) {
+            width: 48%;
+            text-align: center;
+        }
+
+        .modal_div>div:nth-last-of-type(2) {
+            width: 48%;
+            text-align: center;
+        }
+        
+        #send_kakutei {
+            background-color: #3498db;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                padding: 15px 25px;
+                margin: 1.2em 0 4em 0;
+                font-size: 1.12em;
+        }
+
+        #cancel_kakutei {
+            background-color: #3498db;
+                color: #fff;
+                padding: 15px 25px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                margin: 1.2em 0 4em 0;
+                font-size: 1.12em;
+        }
+
+
+                  /* モーダルのスタイル 「戻る」 */
+                  .modal_02 {
+                      display: none;
+                      /* 最初は非表示 */
+                      position: fixed;
+                      z-index: 1;
+                      left: 0;
+                      top: 0;
+                      width: 100%;
+                      height: 100%;
+                      overflow: auto;
+                      background-color: rgb(0, 0, 0);
+                      background-color: rgba(0, 0, 0, 0.4);
+                  }
+        
+                  .modal-content_02 {
+                      background-color: #fefefe;
+                      margin: 17% auto;
+                      padding: 20px;
+                      border: 1px solid #888;
+                      width: 80%;
+                      border-top: 30px solid #333;
+                  }
+        
+                  .close_02 {
+                      color: #aaa;
+                      float: right;
+                      font-size: 28px;
+                      font-weight: bold;
+                  }
+        
+                  .close_02:hover,
+                  .close_02:focus {
+                      color: black;
+                      text-decoration: none;
+                      cursor: pointer;
+                  }
+        
+                  .modal_div_02 {
+                      display: flex;
+                  }
+        
+                  .modal_div_02>div:nth-last-of-type(1) {
+                      width: 48%;
+                      text-align: center;
+                  }
+        
+                  .modal_div_02>div:nth-last-of-type(2) {
+                      width: 48%;
+                      text-align: center;
+                  }
+        
+                  #send_back {
+                      background-color: #3498db;
+                      color: #fff;
+                      border: none;
+                      border-radius: 5px;
+                      cursor: pointer;
+                      padding: 15px 25px;
+                      margin: 1.2em 0 4em 0;
+                      font-size: 1.12em;
+                  }
+        
+                  #cancel_back {
+                      background-color: #3498db;
+                      color: #fff;
+                      padding: 15px 25px;
+                      border: none;
+                      border-radius: 5px;
+                      cursor: pointer;
+                      margin: 1.2em 0 4em 0;
+                      font-size: 1.12em;
+                  }
+
+                  /* 全数完了ボタン */
+                  #all_completed_button {
+                    color: #fff;text-decoration: none;
+                    font-size: 16px;background: #4b4b4b;
+                    padding: 0.6em 1.2em;border-radius: 4px;
+                    box-shadow: none;border: none;
+                  }
+
+                  /* === カウント　テキストボックス　=== */
+                                  .cp_iptxt {
+                                      position: relative;
+                                      width: 80%;
+                                      margin: 40px 3%;
+                                  }
+                
+                                  .cp_iptxt input[type='text'] {
+                                      font: 15px/24px sans-serif;
+                                      box-sizing: border-box;
+                                      width: 100%;
+                                      letter-spacing: 1px;
+                                      padding-left: 4em;
+                                  }
+                
+                                  .cp_iptxt input[type='text']:focus {
+                                      outline: none;
+                                  }
+                
+                                  .ef {
+                                    padding: 8px 10px;text-align: center;
+                                      font-size: 1.4em;border: 0;
+                                      border-bottom: 1px solid #aaa;
+                                      background-color: transparent;
+                                  }
+                
+                                  .ef~.focus_line {
+                                      position: absolute;
+                                      z-index: 99;
+                                      bottom: 0;
+                                      left: 0;
+                                      width: 100%;
+                                      height: 2px;
+                                  }
+                
+                                  .ef~.focus_line:before,
+                                  .ef~.focus_line:after {
+                                      position: absolute;
+                                      bottom: 0;
+                                      left: 0;
+                                      width: 0;
+                                      height: 100%;
+                                      content: '';
+                                      transition: 0.4s;
+                                      background-color: #da3c41;
+                                  }
+                
+                                  .ef~.focus_line:after {
+                                      right: 0;
+                                      left: auto;
+                                  }
+                
+                                  .ef:focus~.focus_line:before,
+                                  .ef:focus~.focus_line:after,
+                                  .cp_iptxt.ef~.focus_line:before,
+                                  .cp_iptxt.ef~.focus_line:after {
+                                      width: 50%;
+                                      transition: 0.4s;
+                                  }
+                
+                                  .ef~label {
+                                      position: absolute;
+                                      z-index: -1;
+                                      top: 4px;
+                                      left: 0;
+                                      width: 100%;
+                                      transition: 0.3s;
+                                      letter-spacing: 0.5px;
+                                      color: #333;
+                                  }
+                
+                                  .ef:focus~label,
+                                  .cp_iptxt.ef~label {
+                                      font-size: 16px;
+                                      top: -33px;
+                                      transition: 0.3s;
+                                      color: #da3c41;
+                                  }
+
+                                /* ====== スキャンした JAN の値  ======= */
+                                .cp_iptxt_02 {
+                                    position: relative;
+                                    width: 80%;
+                                    margin: 20px 3%;
+                                }
+                
+                                .cp_iptxt_02 input[type='text'] {
+                                    font: 15px / 24px sans-serif;
+                                    box-sizing: border-box;
+                                    width: 60%;
+                                    padding: 0.3em;
+                                    transition: 0.3s;
+                                    letter-spacing: 1px;
+                                    color: #aaaaaa;
+                                    border: none;
+                                    border-bottom: 0.5px solid #dedede;
+                                    background: transparent;
+                                }
+                
+                                .ef_02 input[type='text']:focus {
+                                    border-bottom: 2px solid #da3c41;
+                                    outline: none;
+                                }
+
+                                /** Scan　部分 **/
+                                #scan_val {
+                                        padding: 8px 10px;
+                                            text-align: center;
+                                            font-size: 1.1em;
+                                            border: 0;
+                                            border-bottom: 1px solid #aaa;
+                                            background-color: transparent;
+                                            width: 80%;
+                                }
+
+
+/* 「確定」ボタン　エラーメッセージ　モーダル */
+
+#modal_kakutei_err {
+            display: none;
+            /* 初期状態は非表示 */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.8);
+            /* 背景を半透明にします */        
+}
+
+#modal_kakutei_err-message {
+    border-bottom: 3px solid red;
+    padding: 0 0 5px 0;
+    margin: 15px 0px 20px 0;
+}
+
+
+#modal_kakutei_err-content {
+            background-color: white;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+    }
+
+.kakutei_err_close:hover,
+.kakutei_err_close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* ====== 「確定」　数量と一致しない ======= */
+/* ばつ　ボタン */
+.kakutei_err_close {
+    font-size: 3.5em;
+}
+
+} /* ========================= END ====================== */

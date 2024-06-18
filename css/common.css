@@ -1,0 +1,308 @@
+/* スマートフォンの場合 */
+@media only screen and (max-width: 1500px) {
+    html {
+        font-size: 14px;
+        /* スマートフォン用のルート要素のフォントサイズ */
+        letter-spacing: 0.11em;
+        line-height: 1.7em;
+    }
+}
+
+
+/* ====== スマホ ====== */
+@media only screen and (max-width: 1500px) {
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui,
+        -apple-system,
+        Segoe UI,
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif,
+        Apple Color Emoji,
+        Segoe UI Emoji
+}
+
+/*=================== フッターメニュー 01  「戻る」、「更新」 ===================*/
+
+    .footer-menu {
+            position: sticky;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            padding: 20px 0;
+            border-top: 3px solid #4b4b4b;
+    }
+
+/* メニューアイテムのスタイル */
+.footer-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.footer-menu ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    background: #4b4b4b;
+    padding: 0.6em 1.2em;
+    border-radius: 4px;
+  
+}
+
+/* fixed の メニュー */
+.footer-menu_fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px 0;
+    border-top: 3px solid #4b4b4b;
+}
+
+/* メニューアイテムのスタイル */
+.footer-menu_fixed ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.footer-menu_fixed ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-menu_fixed ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    background: #4b4b4b;
+    padding: 0.6em 1.2em;
+    border-radius: 4px;
+
+}
+
+/*=================== フッターメニュー 01  「戻る」、「更新」 END ===================*/
+
+/*=================== フッターメニュー 01  「戻る」、「確定」、「全数完了」 ===================*/
+.footer-menu_02 {
+        position: sticky;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 20px 0;
+        border-top: 3px solid #4b4b4b;
+}
+
+/* メニューアイテムのスタイル */
+.footer-menu_02 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.footer-menu_02 ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-menu_02 ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    background: #4b4b4b;
+    padding: 0.6em 1.2em;
+    border-radius: 4px;
+
+}
+
+/*=================== フッターメニュー 01  「戻る」、「確定」、「全数完了」 END ===================*/
+
+/* エラーメッセージ共通 */
+.error-message {
+    color:#F04848;margin: 1em 0 0 0;display: none;
+}
+
+.error_message {
+    color: #F04848;margin: 1em 0 0 0;
+}
+
+/* デートピッカー  日付を選択 */
+.ui-datepicker-trigger {
+    margin: 0 0 0 10px;
+}
+
+/* 横線　*/
+.hr_01 {
+    border-top: 1px solid #ccc;
+}
+
+/* 太字 */
+
+.bold {
+    font-weight: bold;
+}
+
+/* テーブル 「ロケ」フォント */
+.font_tmp_01 {
+    width: 12%;
+    padding: 6px 6px;
+    font-size: 11px !important;
+    white-space: nowrap;
+}
+
+/* ================== ボタン ==================== */
+
+.button_01 {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 2em 0 0 0;
+}
+
+
+/* ================== テキストボックス ==================== */
+.text_box_tpl_01 {
+    width: 65%;
+    padding: 20px 15px;
+    border-radius: 3px;
+    border: 2px solid #ddd;
+    box-sizing: border-box;
+    font-size: 1.12em;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+.text_box_tpl_01:focus {
+     box-shadow: 0 0 5px 0 rgba(255, 153, 0, 1);
+     border: 2px solid #FFF !important;
+     outline: 0;
+ }
+
+         /* ========== ヘッダーエリア 01 、倉庫、運送便  ============ */
+    
+         /*========== ヘッダー　01 =========*/
+         .head_box {
+             background-color: #4b4b4b;
+             /*padding: 1.2em 0;margin: 0;*/
+             padding: 0.6em 0;
+             margin: 0;
+         }
+    
+         .head_content {
+             text-align: center;
+             position: relative;
+         }
+    
+         .head_01 {
+             display: flex;
+             margin: 0 0 1em 0;
+         }
+    
+         /* ホームアイコン */
+         .home_icon_span {
+             display: inline-block;
+             position: absolute;
+             left: 3%;
+         }
+    
+         .fa-house:before {
+             content: "\f015";
+             color: #fff;
+         }
+    
+         /* アプリ名 */
+         .App_name {
+             color: #fff;
+             font-weight: 800;
+             font-size: 1.2em;
+         }
+    
+         .page_title {
+             display: inline-block;
+            position: relative;
+            left: -18%;
+         }
+    
+         /*========== ヘッダー　01 END =========*/
+    
+         /*========== ヘッダー　02 =========*/
+         .head_box_02 {
+             background-color: #D4D7D7;
+             padding: 0.4em 0;
+             margin: 0 0 1em 0;
+         }
+    
+         /*========== ヘッダー　02 END =========*/
+    
+         .fa-thumbtack:before {
+             content: "\f08d";
+             color: #4b4b4b;
+         }
+    
+         /* ピン　アイコン　span */
+         .home_sub_icon_span {
+             display: inline-block;
+             position: relative;
+             left: 3%;
+         }
+    
+         .souko_icon_box {
+             display: block;
+         }
+         
+         .unsou_icon_box {
+            display: block;
+            position: relative;
+            top: 4px;
+         }
+
+         .unsou_text_box {
+             display: block;
+             position: relative;top: -2px;
+         }
+         
+         /* =========== アイコン画像　home ========== */
+         /* アイコン画像 home a　*/
+         .home_icon_span > a {
+            display: inline-block;
+                position: relative;
+                left: -48%;
+         }
+
+        /* アイコン画像 home  img　*/
+        .home_icon_span > a > img {
+            width: 8%;
+            height: auto;
+        }
+
+        /* =========== アイコン画像　page ========== */
+        .home_sub_icon_span > a {
+
+        }
+
+        .home_sub_icon_span > a > img {
+                width: 6%;
+                height: auto;
+        }
+
+}
+

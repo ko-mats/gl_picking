@@ -1,0 +1,233 @@
+
+/* スマホ */
+@media only screen and (max-width: 1500px) {
+
+            .souko_box_v {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    gap: 10px;
+                    /* ボタン間の間隔 */
+                }
+            
+                .selected_souko_v {
+                    background-color: #007bff !important;
+                    /* 選択されたボタンの背景色 */
+                    color: #fff;
+                    /* 選択されたボタンのテキスト色 */
+                }
+            
+                .souko_box_v button {
+                    width: 100%;
+                    /* ボタンの幅を100%に */
+                    padding: 10px;
+                    font-size: 16px;
+                    border: none;
+                    background-color: #6d6666;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+                }
+            
+                .souko_box_v button:hover {
+                    background-color: #ddd;
+                }
+
+            /* ドロップダウンメニューのスタイル */
+                .dropdown_v {
+                    position: relative;
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+            
+                .dropdown-content_v {
+                    display: none;
+                    position: absolute;
+                    background-color: #c47e7e;
+                    min-width: 160px;
+                    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+                    padding: 12px 16px;
+                    z-index: 1;
+                }
+            
+                .dropdown-content_v button {
+                    width: 100%;
+                    padding: 8px 0;
+                    text-align: left;
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                    cursor: pointer;
+                }
+            
+                .dropdown-content_v button:hover {
+                    background-color: #ddd;
+                }
+            
+                /* ボタンのスタイル */
+                .dropbtn_v {
+                    background-color: #4CAF50;
+                    color: white;
+                    padding: 16px;
+                    font-size: 16px;
+                    border: none;
+                    cursor: pointer;
+                }
+            
+                .dropbtn_v:hover,
+                .dropbtn_v:focus {
+                    background-color: #3e8e41;
+                }
+            
+                /* 選択した値を表示する部分のスタイル */
+                .selected-value {
+                    margin-top: 20px;
+                    /*暫定処理*/
+                    font-size: 0.3px;
+                    display: none;
+                }
+                
+                /* 次へボタンのスタイル */
+
+                #sendSelectedValues_box{
+                    text-align: center;
+                }
+
+                #sendSelectedValues {
+                    background-color: #3498db;
+                    color: #fff;
+                    padding: 15px 20px;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    margin: 1.2em 0.8em 4em 0.4em;
+                    font-size: 0.91em;
+                }
+            
+                #sendSelectedValues:hover {
+                    background-color: #45a049;
+                }
+
+                /* ボタン部分 */
+                .third_btn_flex_box {
+                    display: flex;
+                }
+                
+                .third_btn_flex_box > div:nth-of-type(1) {
+                    width: 32%;
+                }
+
+                .third_btn_flex_box>div:nth-of-type(2) {
+                    width: 32%;
+                } 
+                
+                .third_btn_flex_box>div:nth-of-type(3) {
+                    width: 32%;
+                }
+
+                .third_btn_flex_box>div:nth-of-type(2) > button {
+                    background-color: #3498db;
+                        color: #fff;
+                        padding: 15px 20px;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                        margin: 1.2em 0.8em 4em 0px;
+                            font-size: 0.91em;
+                }
+
+                .third_btn_flex_box>div:nth-of-type(3)>button {
+                                       background-color: #3498db;
+                                       color: #fff;
+                                        padding: 15px 20px;
+                                       border: none;
+                                       border-radius: 5px;
+                                       cursor: pointer;
+                                        margin: 1.2em 0.8em 4em 0px;
+                                            font-size: 0.91em;
+                                   }
+
+                    /* 選択 */
+                                                .view_item_01 {
+                                                    margin: 0 0 0 15px;
+                                                    padding: 5px 5px;
+                                                    background: #ddd;
+                                                }
+             
+                                                        .view_item_02 {
+                                                            margin: 0 5px 0 15px;
+                                                            padding: 5px 5px;
+                                                            background: #ddd;
+                                                        }
+
+                                                                                                
+                        .view_item_03 {
+                                margin: 0 5px 0 15px;
+                                    padding: 5px 5px;
+                                    background: #ddd;
+                                }
+                        
+
+                         .view_item_04 {
+                                margin: 0 5px 0 15px;
+                                    padding: 5px 5px;
+                                    background: #ddd;
+                                }
+
+                        .tansou_select {
+                                margin: 0 0 0 15px;
+                                    padding: 5px 5px;
+                                    background: #ddd;
+                        }
+                         
+
+                         .view_item_01_val {
+
+                         }
+
+                        .view_item_02_val {
+
+                        }
+
+                        .view_item_03_val {
+
+                        }
+
+                        .view_item_04_val {
+
+                        }
+
+                        .select_data_box {
+                            /*暫定処理*/
+                            font-size: 0.3px;
+                                margin: 0;
+                                padding: 0;
+                                display: none;
+                        }
+
+                        #selectedValues_set_next_val {
+                            /*暫定処理*/
+                                font-size: 0.3px;
+                                display: none;
+                        }
+
+                       /* ======== 表示用 =========== */ 
+
+                        /*  表示用　運送名 */
+                        .unsou_name_v {
+                            margin: 0 5px;
+                            display: inline-block;
+                        }
+
+                    /* 表示用　見出し */
+                    .third_view_midashi {
+                        padding: 0px 0 5px 10px;
+                            border-left: 10px solid rgb(69, 160, 73);
+                            margin: 10px 0 10px 10px;
+                            border-bottom: 2px solid rgb(69, 160, 73);
+                            width: 65%;
+                    }   
+
+                    .color-changed {
+                        background-color: #45a049;
+                    }
+
+}
